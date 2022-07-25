@@ -29,9 +29,10 @@
     margin-left: 30px;
 }
 
-.client__link:hover,
-.client__link:focus {
+.client__link{
+    &:hover,
+    &:focus {
     fill: var(--color-accent);
     border: 1px solid var(--color-accent);
 
-}
+}}

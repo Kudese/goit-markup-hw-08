@@ -27,10 +27,11 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-window__close:focus,
-.modal-window__close:hover {
+.modal-window__close {
+    &:focus,
+    &:hover {
     fill: var(--color-accent);
-}
+}}
 
 .modal-window__form-title {
     margin-bottom: 12px;

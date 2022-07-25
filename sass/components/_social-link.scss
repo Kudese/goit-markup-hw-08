@@ -12,9 +12,10 @@
 .social-iteam+.social-iteam{
     margin-left: 10px;
 }
-.social-link:hover,
-.social-link:focus {
+.social-link{
+&:hover,
+&:focus {
     background-color: var(--color-accent);
     fill: var(--color-main);
-}
+}}
 
