@@ -1,25 +1,23 @@
 .container-join {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 .container-join__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-main);
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-main);
+  margin-bottom: 20px;
 }
 
 .container-join__list {
-    display: flex;
+  display: flex;
 }
 
 .container-join__link {
-
-    background-color: var(--color-backgro-icon);
-    fill: var(--color-main);
-    transition-property: background-color;
+  background-color: var(--color-backgro-icon);
+  fill: var(--color-main);
+  transition-property: background-color;
 }
-

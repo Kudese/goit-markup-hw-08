@@ -1,38 +1,35 @@
 .send-mail {
-    margin-left: auto;
-
+  margin-left: auto;
 }
 
 .send-mail__text {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    align-items: baseline;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  align-items: baseline;
 
-    letter-spacing: 0.06em;
-    color: var(--color-main);
+  letter-spacing: 0.06em;
+  color: var(--color-main);
 }
 
 .send-mail__input {
-    color: var(--color-main);
-    height: 50px;
-    width: 358px;
-    padding: 15px 16px;
-    margin-right: 12px;
-    background-color: var(--color-b-footer);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: none;
-
+  color: var(--color-main);
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  background-color: var(--color-b-footer);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
 }
 
 .send-mail__button {
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
