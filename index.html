@@ -22,37 +22,60 @@
   <body class="body">
     <header class="header">
       <nav class="nav container">
-        <a href="" class="nav__logo">
-          <span class="nav__logo-web">Web</span
-          ><span class="nav__logo-studionav">Studio</span>
-        </a>
-        <ul class="nav__list">
-          <li>
-            <a class="nav__link nav__link--curent" href="./index.html"
-              >Студия</a
-            >
-          </li>
-          <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav__link" href="">Контакты</a></li>
-        </ul>
-        <ul class="nav__login">
-          <li class="nav__login-iteam">
-            <a class="nav__login-link" href="mailto:info@devstudio.com">
-              <svg class="nav__icon-log" width="16px" height="12px">
-                <use href="./images/icons.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="nav__login-iteam">
-            <a class="nav__login-link" href="tel:380961111111">
-              <svg class="nav__icon-log" width="16px" height="12px">
-                <use href="./images/icons.svg#fone"></use>
-              </svg>
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="mobil-heder">
+          <a href="" class="nav__logo">
+            <span class="nav__logo-web">Web</span><span class="nav__logo-studionav">Studio</span>
+          </a>
+          <button data-menu-button class="menu-button is-open" type="button">
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/icons.svg#icon-menu_40px-1"></use>
+              <use class="icon-cross" href="./images/icons.svg#icon-close_40px-1"></use>
+            </svg>
+          </button>
+        </div>
+        
+        <div data-menu class="mobal-menu is-open">
+            <ul class="nav__list">
+              <li>
+                <a class="nav__link nav__link--curent" href="./index.html">Студия</a>
+              </li>
+              <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+              <li><a class="nav__link" href="">Контакты</a></li>
+            </ul>
+            
+            <ul class="nav__login">
+              <li class="nav__login-iteam mobil-heder--hidenn ">
+                <a class="nav__login-link" href="mailto:info@devstudio.com">
+                  <svg class="nav__icon-log" width="16px" height="12px">
+                    <use href="./images/icons.svg#mail"></use>
+                  </svg>
+                  info@devstudio.com</a>
+              </li>
+              <li class="nav__login-iteam nav__login-iteam--mobile">
+                <a class="nav__login-link" href="tel:380961111111">
+                  <svg class="nav__icon-log" width="16px" height="12px">
+                    <use href="./images/icons.svg#fone"></use>
+                  </svg>
+                  +38 099 111 11 11</a>
+              </li>
+              <li class="nav__login-iteam destop-heder-hiden">
+                <a class="nav__login-link" href="mailto:info@devstudio.com">
+                  <svg class="nav__icon-log" width="16px" height="12px">
+                    <use href="./images/icons.svg#mail"></use>
+                  </svg>
+                  info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="cocial-list--mobile">
+              <li class="cocial-link--mobile"><a href="">Instagram</a></li>
+              <li><span class="cocial-link--mobile line"></span></li>
+              <li class="cocial-link--mobile"><a href="">Twitter</a></li>
+              <li><span class="cocial-link--mobile line"></span></li>
+              <li class="cocial-link--mobile"><a href="">Facebook</a></li>
+              <li><span class="cocial-link--mobile line"></span></li>
+              <li class="cocial-link--mobile"><a href="">LinkedIn</a></li>
+            </ul>
+        </div>
       </nav>
     </header>
 
@@ -135,7 +158,8 @@
           <ul class="our-work-section__list">
             <li class="our-work-section__link">
               <img
-                src="./images/img.jpg"
+                srcset="../images/w1-d_1200x2.jpg 2x"
+                src="../images/w1-d_1200x1.jpg"
                 alt="Работа в поте лица"
                 width="370"
               />
@@ -143,7 +167,8 @@
             </li>
             <li class="our-work-section__link">
               <img
-                src="./images/img1.jpg"
+                srcset="../images/w2-d_1200x2.jpg 2x"
+                src="../images/w2-d_1200x1.jpg"
                 alt="Использования высоких технологий"
                 width="370"
               />
@@ -151,7 +176,8 @@
             </li>
             <li class="our-work-section__link">
               <img
-                src="./images/img2.jpg"
+                srcset="../images/w3-d_1200x2.jpg 2x"
+                src="../images/w3-d_1200x1.jpg"
                 alt="Подбор лучших вариантов"
                 width="370"
               />
@@ -167,12 +193,12 @@
           <h2 class="title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="card-team">
-
-              <img
-         
-              src="./images/img3.jpg" 
-              width="270" 
-              alt="Игорь Демьяненко" />
+              <picture>
+                <source max-width="737px" srcset="../images/img1-m_480x1.jpg 1x, ../images/img1-m_480x2.jpg 2x " media="(max-width: 767px)">
+                <source width="354px" srcset="../images/img1-t_768x1.jpg 1x,../images/img1-t_768x2.jpg 2x " media="(min-width: 768px ) and (max-width: 1199px )">
+                <source width="270px"  srcset="../images/img1-d_1200x1.jpg 1x, ../images/img1-d_1200x2.jpg 2x " media="(min-width: 1200px)">
+                <img src="../images/img1-d_1200.jpg" alt="Игорь Демьяненко">
+              </picture>
               <h3 class="card-team_name">Игорь Демьяненко</h3>
               <p class="card-team_text">Product Designer</p>
               <ul class="card-team__social-list">
@@ -207,7 +233,15 @@
               </ul>
             </li>
             <li class="card-team">
-              <img src="./images/img4.jpg" width="270" alt="Ольга Репина" />
+              <picture>
+                <source width="450px"" srcset="../images/img2-m_480x1.jpg 1x, ../images/img2-m_480x2.jpg 2x " media="(max-width: 767px)">
+                <source width="354px" srcset="../images/img2-t_768x1.jpg 1x,../images/img2-t_768x2.jpg 2x "
+                  media="(min-width: 768px ) and (max-width: 1199px )">
+                <source width="270px" srcset="../images/img2-d_1200x1.jpg 1x, ../images/img2-d_1200x2.jpg 2x "
+                  media="(min-width: 1200px)">
+                <img src="../images/img2-d_1200x1.jpg" width="270" alt="Ольга Репина" />
+              </picture>
+              
               <h3 class="card-team_name">Ольга Репина</h3>
               <p class="card-team_text">Frontend Developer</p>
               <ul class="card-team__social-list">
@@ -242,7 +276,15 @@
               </ul>
             </li>
             <li class="card-team">
-              <img src="./images/img5.jpg" width="270" alt="Николай Тарасов" />
+              <picture>
+                <source width="450px" srcset="../images/img3-m_480x1.jpg 1x, ../images/img3-m_480x2.jpg 2x " media="(max-width: 767px)">
+                <source width="354px" srcset="../images/img3-t_768x1.jpg 1x,../images/img3-t_768x2.jpg 2x "
+                  media="(min-width: 768px ) and (max-width: 1199px )">
+                <source width="270px" srcset="../images/img3-d_1200x1.jpg 1x, ../images/img3-d_1200x2.jpg 2x"
+                  media="(min-width: 1200px)">
+                <img src="../images/img3-d_1200x1.jpg" width="270" alt="Николай Тарасов" />
+              </picture>
+              
               <h3 class="card-team_name">Николай Тарасов</h3>
               <p class="card-team_text">Marketing</p>
               <ul class="card-team__social-list">
@@ -277,7 +319,15 @@
               </ul>
             </li>
             <li class="card-team">
-              <img src="./images/img6.jpg" width="270" alt="Михаил Ермаков" />
+              <picture>
+                <source width="450px" srcset="../images/img4-m_480x1.jpg 1x, ../images/img4-m_480x2.jpg 2x " media="(max-width: 767px)">
+                <source width="354px" srcset="../images/img4-t_768x1.jpg 1x,../images/img4-t_768x2.jpg 2x "
+                  media="(min-width: 768px ) and (max-width: 1199px )">
+                <source width="270px" srcset="../images/img4-d_1200x1.jpg 1x, ../images/img4-d_1200x2.jpg 2x "
+                  media="(min-width: 1200px)">
+                <img src="../images/img4-d_1200x1.jpg" width="270" alt="Михаил Ермаков" />
+              </picture>
+              
               <h3 class="card-team_name">Михаил Ермаков</h3>
               <p class="card-team_text">UI Designer</p>
               <ul class="card-team__social-list">
@@ -514,5 +564,18 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+
 .hero-title {
   text-align: center;
   background-color: var(--color-b-footer);
@@ -28,14 +29,18 @@
 }
 
 .hero-title__name {
-  margin: 0 auto;
-  width: 360px;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.33;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 360px;
   letter-spacing: 0.06em;
   color: var(--color-main);
   text-transform: uppercase;
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     width: 696px;
