@@ -83,5 +83,9 @@
 <symbol xmlns="http://www.w3.org/2000/svg" id="icon-send-mail" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32.009 0l-32.009 18.005 10.23 3.789 15.778-14.792-12.001 16.191 0.010 0.004-0.012-0.004v8.817l5.737-6.693 7.267 2.692 5.001-28.008z"/>
 </symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" id="icon-menu_40px-1" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"/>
+</symbol>
+
 </defs>
 </svg>
