@@ -10,6 +10,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+
+  @media screen and(max-width:767px) {
+    max-width: 450px;
+    height: 609px;
+    width: 100%;
+  }
 }
 
 .modal-window__close {
@@ -41,4 +47,8 @@
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  @media screen and (max-width:767px) {
+      line-height: 1.5;
+  
+    }
 }

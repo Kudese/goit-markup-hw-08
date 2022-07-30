@@ -3,14 +3,20 @@
   padding: 60px 0;
 }
 
-// .footer__container {
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer__container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .footer__logo-studio {
@@ -31,12 +37,24 @@
   font-style: normal;
   line-height: 1.71;
   color: var(--color-main);
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
 }
-
+.footer__list-addrec{
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 .footer__link {
   font-style: normal;
   line-height: 1.71;
   color: var(--color-addres);
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .footer__link + .footer__link {

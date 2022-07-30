@@ -1,4 +1,10 @@
 .container-join {
+  @media screen and(max-width: 767px) {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    
+  }
   margin-left: 70px;
 }
 
@@ -14,6 +20,8 @@
 
 .container-join__list {
   display: flex;
+  @media screen and(max-width: 767px) {
+   justify-content: center;}
 }
 
 .container-join__link {

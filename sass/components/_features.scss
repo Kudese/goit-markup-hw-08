@@ -8,6 +8,11 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
+.features__list {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .features__text {
   line-height: 1.71;
   color: var(--color-features);
