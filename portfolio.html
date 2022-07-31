@@ -21,36 +21,78 @@
   <body class="body">
     <header class="header">
       <nav class="nav container">
-        <a href="" class="nav__logo">
-          <span class="nav__logo-web">Web</span
-          ><span class="nav__logo-studionav">Studio</span>
-        </a>
-        <ul class="nav__list">
-          <li><a class="nav__link" href="./index.html">Студия</a></li>
-          <li>
-            <a class="nav__link nav__link--curent" href="./portfolio.html"
-              >Портфолио</a
+        <div class="mobil-heder">
+          <a href="" class="nav__logo">
+            <span class="nav__logo-web">Web</span
+            ><span class="nav__logo-studionav">Studio</span>
+          </a>
+          <button data-menu-button class="menu-button" type="button">
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
             >
-          </li>
-          <li><a class="nav__link" href="">Контакты</a></li>
-        </ul>
-        <ul class="nav__login">
-          <li class="nav__login-iteam">
-            <a class="nav__login-link" href="mailto:info@devstudio.com">
-              <svg class="nav__icon-log" width="16px" height="12px">
-                <use href="./images/icons.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="nav__login-iteam">
-            <a class="nav__login-link" href="tel:380961111111">
-              <svg class="nav__icon-log" width="16px" height="12px">
-                <use href="./images/icons.svg#fone"></use></svg>
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-menu_40px-1"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-close_40px-1"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div data-menu class="mobal-menu">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a class="nav__link nav__link--curent" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li><a class="nav__link" href="">Контакты</a></li>
+          </ul>
+
+          <ul class="nav__login">
+            <li class="nav__login-iteam mobil-heder--hidenn">
+              <a class="nav__login-link" href="mailto:info@devstudio.com">
+                <svg class="nav__icon-log" width="16px" height="12px">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="nav__login-iteam nav__login-iteam--mobile">
+              <a class="nav__login-link" href="tel:380961111111">
+                <svg class="nav__icon-log" width="16px" height="12px">
+                  <use href="./images/icons.svg#fone"></use>
+                </svg>
                 +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+              >
+            </li>
+            <li class="nav__login-iteam destop-heder-hiden">
+              <a class="nav__login-link" href="mailto:info@devstudio.com">
+                <svg class="nav__icon-log" width="16px" height="12px">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="cocial-list--mobile">
+            <li class="cocial-link--mobile"><a href="">Instagram</a></li>
+            <li><span class="cocial-link--mobile line"></span></li>
+            <li class="cocial-link--mobile"><a href="">Twitter</a></li>
+            <li><span class="cocial-link--mobile line"></span></li>
+            <li class="cocial-link--mobile"><a href="">Facebook</a></li>
+            <li><span class="cocial-link--mobile line"></span></li>
+            <li class="cocial-link--mobile"><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -89,7 +131,34 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img src="./images/0.jpg" alt="Клиенты" width="370" />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/1-m_480x1.jpg 1x,
+                        ../images/1-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/1-t_768x1.jpg 1x,
+                        ../images/1-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/1-d_1200x1.jpg 1x,
+                        ../images/1-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/0.jpg" alt="Клиенты" width="370" />
+                  </picture>
+
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -105,7 +174,38 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img src="./images/1.jpg" alt="Басткетболисты" width="370" />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/2-m_480x1     1x,
+                        ../images/2-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/2-t_768x1.jpg 1x,
+                        ../images/2-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/2-d_1200x1.jpg 1x,
+                        ../images/2-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/1.jpg"
+                      alt="Басткетболисты"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -123,11 +223,37 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img
-                    src="./images/2.jpg"
-                    alt="Ресторат море продуктов"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/3-m_480x1     1x,
+                        ../images/3-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/3-t_768x1.jpg 1x,
+                        ../images/3-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/3-d_1200x1.jpg 1x,
+                        ../images/3-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/1.jpg"
+                      alt="Басткетболисты"
+                      width="370"
+                    />
+                  </picture>
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -143,7 +269,38 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img src="./images/3.jpg" alt="Наушники" width="370" />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/4-m_480x1     1x,
+                        ../images/4-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/4-t_768x1.jpg 1x,
+                        ../images/4-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/4-d_1200x1.jpg 1x,
+                        ../images/4-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/1.jpg"
+                      alt="Басткетболисты"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -159,7 +316,34 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img src="./images/4.jpg" alt="Коробки" width="370" />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/5-m_480x1     1x,
+                        ../images/5-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/5-t_768x1.jpg 1x,
+                        ../images/5-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/5-d_1200x1.jpg 1x,
+                        ../images/5-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/4.jpg" alt="Коробки" width="370" />
+                  </picture>
+
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -175,11 +359,37 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img
-                    src="./images/5.jpg"
-                    alt="Моноблок от епел"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/6-m_480x1     1x,
+                        ../images/6-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/6-t_768x1.jpg 1x,
+                        ../images/6-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/6-d_1200x1.jpg 1x,
+                        ../images/6-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="../images/img4-d_1200x1.jpg"
+                      width="270"
+                      alt="Михаил Ермаков"
+                    />
+                  </picture>
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -197,7 +407,34 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img src="./images/6.jpg" alt="Журнал" width="370" />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/7-m_480x1     1x,
+                        ../images/7-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/7-t_768x1.jpg 1x,
+                        ../images/7-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/7-d_1200x1.jpg 1x,
+                        ../images/7-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/6.jpg" alt="Журнал" width="370" />
+                  </picture>
+
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -213,7 +450,34 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img src="./images/7.jpg" alt="Бирка" width="370" />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/8-m_480x1     1x,
+                        ../images/8-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/8-t_768x1.jpg 1x,
+                        ../images/8-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/8-d_1200x1.jpg 1x,
+                        ../images/8-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/7.jpg" alt="Бирка" width="370" />
+                  </picture>
+
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -229,7 +493,34 @@
             <li class="portfolio-lis__item">
               <a class="portfolio-lis__link" href="">
                 <div class="portfolio-lis__overlay">
-                  <img src="./images/8.jpg" alt="Ноубук" width="370" />
+                  <picture>
+                    <source
+                      width="450px"
+                      srcset="
+                        ../images/9-m_480x1     1x,
+                        ../images/9-m_480x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      width="354px"
+                      srcset="
+                        ../images/9-t_768x1.jpg 1x,
+                        ../images/9-t_768x2.jpg 2x
+                      "
+                      media="(min-width: 768px ) and (max-width: 1199px )"
+                    />
+                    <source
+                      width="370px"
+                      srcset="
+                        ../images/9-d_1200x1.jpg 1x,
+                        ../images/9-d_1200x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/8.jpg" alt="Ноубук" width="370" />
+                  </picture>
+
                   <p class="portfolio-lis__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -248,69 +539,65 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div>
-          <a href="" class="footer__logo">
-            <span class="footer__logo-web">Web</span
-            ><span class="footer__logo-studio">Studio</span>
-          </a>
-          <address>
-            <ul class="footer__list-addrec">
-              <li>
-                <a class="footer__address" href="">
-                  г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-bloc">
+          <div class="addressa">
+            <a href="" class="footer__logo">
+              <span class="footer__logo-web">Web</span><span class="footer__logo-studio">Studio</span>
+            </a>
+            <address>
+              <ul class="footer__list-addrec">
+                <li class="footer__address">
+                  <a href=""> г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer__link">
+                  <a href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="footer__link">
+                  <a href="tel:380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="container-join">
+            <p class="container-join__text">присоединяйтесь</p>
+            <ul class="container-join__list">
+              <li class="social-iteam">
+                <a href="" class="container-join__link social-link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__link">
-                <a href="mailto:info@example.com">info@example.com</a>
+              <li class="social-iteam">
+                <a href="" class="container-join__link social-link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__link">
-                <a href="tel:380991111111">+38 099 111 11 11</a>
+              <li class="social-iteam">
+                <a href="" class="container-join__link social-link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-iteam">
+                <a href="" class="container-join__link social-link">
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="container-join">
-          <p class="container-join__text">присоединяйтесь</p>
-          <ul class="container-join__list">
-            <li class="social-iteam">
-              <a href="" class="container-join__link social-link">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-iteam">
-              <a href="" class="container-join__link social-link">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-iteam">
-              <a href="" class="container-join__link social-link">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-iteam">
-              <a href="" class="container-join__link social-link">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+    
         <div class="send-mail">
           <p class="send-mail__text">Подпишитесь на рассылку</p>
           <form name="send-mail">
             <label>
-              <input
-                class="send-mail__input"
-                type="email"
-                placeholder="E-mail"
-              />
+              <input class="send-mail__input" type="email" placeholder="E-mail" />
             </label>
             <button class="button send-mail__button" type="submit">
               Подписаться<svg width="24px" height="24px">
@@ -321,5 +608,6 @@
         </div>
       </div>
     </footer>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

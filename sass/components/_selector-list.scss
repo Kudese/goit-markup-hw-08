@@ -1,10 +1,25 @@
 .selector-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   margin-bottom: 50px;
+  
+  
+  @media screen and(max-width:767px) {
+    width: calc(100% - 30px);
+    
+  }
+  @media screen and(min-width:768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+  }
 }
 
 .selector-list__button {
+  @media screen and(max-width:767px) {
+      margin-bottom: 21px;
+    }
   border-radius: 4px;
   border-color: transparent;
   padding: 6px 22px;
