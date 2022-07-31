@@ -48,6 +48,10 @@
 .checkbox__link-agreement {
   color: var(--color-accent);
   text-decoration: underline;
+  @media screen and(max-width:1199px) {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
 }
 
 .checkbox__form-send {
