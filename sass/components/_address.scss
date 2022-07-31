@@ -35,6 +35,10 @@
   font-weight: 700;
   font-size: 26px;
   color: var(--color-main);
+  @media screen and(max-width:1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .footer__logo-web {
@@ -42,6 +46,10 @@
   font-weight: 700;
   font-size: 26px;
   color: var(--color-accent);
+  @media screen and(max-width:1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .footer__address {
@@ -68,6 +76,7 @@
   @media screen and (max-width: 1199px) {
     width: 100%;
     text-align: center;
+    margin-top: 8px;
   }
 }
 

@@ -26,7 +26,7 @@
     width: calc((100% - 2 * 30px) / 2);
     margin-bottom: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
   }
@@ -36,7 +36,6 @@
 .features__text {
   line-height: 1.71;
   color: var(--color-features);
-
 }
 
 .features__name {
@@ -47,6 +46,9 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {

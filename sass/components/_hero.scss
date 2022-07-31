@@ -68,15 +68,13 @@
 .hero-title__name {
   font-weight: 900;
   font-size: 26px;
-  line-height: 42px;
+  line-height: 1.61;
   text-align: center;
+  font-style: normal;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
-
-  letter-spacing: 0.06em;
   color: var(--color-main);
-  text-transform: uppercase;
   @media screen and (max-width: 1199px) {
     max-width: 360px;
   }
