@@ -286,21 +286,23 @@
   color: var(--color-accent);
 }
 .nav__link--curent {
+ @media screen and(min-width:768px) {
   &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    transform: translatey(100%);
-    background-color: var(--color-accent);
-    border: 2px solid var(--color-accent);
-    border-radius: 2px;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
       position: absolute;
-      top: 100%;
-      transform: translate(0, -100%);
+      content: "";
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      transform: translatey(100%);
+      background-color: var(--color-accent);
+      border: 2px solid var(--color-accent);
+      border-radius: 2px;
+  
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        position: absolute;
+        top: 100%;
+        transform: translate(0, -100%);
+      }
     }
-  }
+ }
 }
