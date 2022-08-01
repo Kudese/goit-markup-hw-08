@@ -79,7 +79,9 @@
   position: relative;
 }
 .mobal-menu.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -214,7 +216,7 @@
 .cocial-list--mobile {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
