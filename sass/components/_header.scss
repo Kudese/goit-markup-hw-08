@@ -88,11 +88,10 @@
   // right: 0;
   bottom: 0;
   width: 100vw;
- 
+
   background-color: var(--color-main);
-  
 }
-.menu-button.menu-button.is-open{
+.menu-button.menu-button.is-open {
   position: fixed;
   top: 21px;
   right: 25px;
@@ -238,8 +237,8 @@
 }
 
 .nav__login {
-margin-top: auto;
-margin-bottom: 68px;
+  margin-top: auto;
+  // margin-bottom: 68px;
 
   @media screen and(min-width:768px) and(max-width:1199px) {
     flex-direction: column;
