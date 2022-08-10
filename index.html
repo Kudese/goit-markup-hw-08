@@ -6,17 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <svg class="header_logo" width="199px" height="50px">
-        <use href="./images/icon.svg#icon-logo"></use>
-      </svg>
-      <button>
-        <svg class="header_burger" width="20px" height="12px">
-          <use href="./images/icon.svg#icon-burger"></use>
+      <nav class="nav">
+        <svg class="nav__logo" width="199px" height="50px">
+          <use href="./images/icon.svg#icon-logo"></use>
         </svg>
-      </button>
+        <div data-menu class="mobal-menu">
+          <button class="order-button" type="button"> Buy now </button>
+          <ul class="nav__link">
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">How it’s made?</a></li>
+            <li><a href="">Our products</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <button data-menu-button class="nav__burger-button">
+          <svg width="20px" height="12px">
+            <use
+              class="nav__icon-burger"
+              href="./images/icon.svg#icon-burger"
+            ></use>
+            <use
+              class="nav__icon-close"
+              href="./images/icon.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+      </nav>
     </header>
+    <script src="./mobile-menu.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>
