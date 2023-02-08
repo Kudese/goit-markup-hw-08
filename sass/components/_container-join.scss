@@ -1,0 +1,36 @@
+.container-join {
+  margin-left: 70px;
+
+  @media screen and(max-width: 767px) {
+    margin: 0;
+    width: 100%;
+  }
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+   margin-left: 145px;
+    text-align: center;
+  }
+}
+
+.container-join__text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-main);
+  margin-bottom: 20px;
+}
+
+.container-join__list {
+  display: flex;
+  @media screen and(max-width: 1199px) {
+    justify-content: center;
+  }
+}
+
+.container-join__link {
+  background-color: var(--color-backgro-icon);
+  fill: var(--color-main);
+  transition-property: background-color;
+}
